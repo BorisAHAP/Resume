@@ -24,7 +24,7 @@
                         </div>
                     </article>
                     <article class="col3 pad_left1">
-                        <h2>What’s New</h2>
+                        <h2>Task List</h2>
                         <div class="pad">
                             <div class="wrapper">
                                 <span class="date"><span>22</span>may</span>
@@ -59,61 +59,55 @@
     </section>
 @endsection
 @section('content2')
-    <div class="body4">
-        <div class="main">
-            <section id="content2">
-                <div class="line2 wrapper">
+    <div class="line2 wrapper">
+        <div class="wrapper">
+            <article class="col1">
+                <h2>My Philosophy</h2>
+                <div class="wrapper">
+                    <figure class="left marg_right1"><img src="{{asset('images/page1_img2.jpg')}}" alt="">
+                    </figure>
+                    <p>
+                        <strong>At vero eos et accusamus iusto</strong>
+                        odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque <a
+                                href="#">corrupti quos dolores</a> et quas moles- tias excepturi sint
+                        occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt.
+                    </p>
+                </div>
+                <div class="pad">
+                    <p>
+                        Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum
+                        soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime
+                        placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+                    </p>
+                </div>
+            </article>
+            <article class="col3 pad_left1">
+                <h2>Coming Soon</h2>
+                <div class="pad">
                     <div class="wrapper">
-                        <article class="col1">
-                            <h2>My Philosophy</h2>
-                            <div class="wrapper">
-                                <figure class="left marg_right1"><img src="{{asset('images/page1_img2.jpg')}}" alt="">
-                                </figure>
-                                <p>
-                                    <strong>At vero eos et accusamus iusto</strong>
-                                    odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque <a
-                                            href="#">corrupti quos dolores</a> et quas moles- tias excepturi sint
-                                    occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt.
-                                </p>
-                            </div>
-                            <div class="pad">
-                                <p>
-                                    Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum
-                                    soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime
-                                    placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
-                                </p>
-                            </div>
-                        </article>
-                        <article class="col3 pad_left1">
-                            <h2>Coming Soon</h2>
-                            <div class="pad">
-                                <div class="wrapper">
-                                    <span class="date"><span>12</span>jun</span>
-                                    <p>
-                                        <a href="#" class="link1">Sed ut perspiciatis</a><br>
-                                        Unde omnis iste natuerror tium doloremque laudany tium totamrem.
-                                    </p>
-                                </div>
-                                <div class="wrapper">
-                                    <span class="date"><span>23</span>jun</span>
-                                    <p>
-                                        <a href="#" class="link1">Doperiam eaque ipsa </a><br>
-                                        Quae ab illo inventore veritatis et quasi archiecto emo enim ipsam.
-                                    </p>
-                                </div>
-                            </div>
-                        </article>
+                        <span class="date"><span>12</span>jun</span>
+                        <p>
+                            <a href="#" class="link1">Sed ut perspiciatis</a><br>
+                            Unde omnis iste natuerror tium doloremque laudany tium totamrem.
+                        </p>
                     </div>
-                    <div class="wrapper buttons">
-                        <article class="col1">
-                            <a href="#" class="button">Read More</a>
-                        </article>
-                        <article class="col3 pad_left1">
-                            <a href="#" class="button">Read More</a>
-                        </article>
+                    <div class="wrapper">
+                        <span class="date"><span>23</span>jun</span>
+                        <p>
+                            <a href="#" class="link1">Doperiam eaque ipsa </a><br>
+                            Quae ab illo inventore veritatis et quasi archiecto emo enim ipsam.
+                        </p>
                     </div>
                 </div>
-            </section>
+            </article>
+        </div>
+        <div class="wrapper buttons">
+            <article class="col1">
+                <a href="#" class="button">Read More</a>
+            </article>
+            <article class="col3 pad_left1">
+                <a href="#" class="button">Read More</a>
+            </article>
         </div>
     </div>
 @endsection

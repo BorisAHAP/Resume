@@ -15,9 +15,23 @@
 //    return view('welcome');
 //});
 
+Route::get('/home', function(){
+   return redirect('/');
+});
 
 Artisan::call('view:clear');
 
 Auth::routes();
 Route::get('/','SiteController@index')->name('home');
 //Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/obo-mne','AboutController@about')->name('about');
+Route::get('/kontakty','ContactController@contact')->name('contact');
+//Route::get('/download','S');
+Route::group([
+    'prefix'=>'admin',
+    'namespace'=>'Admin',
+    'as'=>'admin.',
+    'middleware'=>'auth'
+], function () {
+    Route::get('/', 'AdminController@index')->name('admin');
+});

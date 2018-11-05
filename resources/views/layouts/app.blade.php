@@ -1,11 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
-    <title>Home</title>
-    <meta charset="utf-8">
+    <title>{{ config('app.name', 'BorisAkhapkin') }}</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
     <link rel="stylesheet" href="{{asset('css/reset.css')}}" type="text/css" media="all">
     <link rel="stylesheet" href="{{asset('css/layout.css')}}" type="text/css" media="all">
     <link rel="stylesheet" href="{{asset('css/style.css')}}" type="text/css" media="all">
+    <link rel="stylesheet" href="{{asset('css/prettyPhoto.css')}}" type="text/css" media="all">
     <style type="text/css">
         .bg {
             behavior: url({{asset('js/PIE.htc')}})
@@ -26,7 +33,14 @@
         </div>
     </div>
 </div>
-@yield('content2')
+<div class="body4">
+    <div class="main">
+        <section id="content2">
+            @yield('content2')
+        </section>
+    </div>
+</div>
+
 <!-- / content -->
 @include('layouts.footer')
 <script type="text/javascript" src="{{asset('js/jquery-1.5.2.js')}}"></script>
